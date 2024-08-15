@@ -24,11 +24,11 @@ const Register: React.FC = () => {
         <div className="w-1/2 mr-10 flex items-center justify-center rounded-lg">
           <div className='absolute top-28 left-20 flex'>
           <img src="src/assets/lgp.png" alt="lgp.png" className="h-12 w-12"/>
-          <h1 className="ml-3 mt-6 text-blue-500 font-extrabold text-xl">Planet</h1>
+          <h1 className="ml-3 mt-6 text-white font-extrabold text-xl">Planet</h1>
           </div>
-          <span className="absolute bottom-28 left-20 text-blue-500 font-extrabold text-5xl ">Exploring <br></br>the universe</span>
+          <span className="absolute bottom-28 left-20 text-white font-extrabold text-5xl ">Exploring <br></br>the universe</span>
         </div>
-              <div className="bg-gray-400 p-8 rounded shadow-md">
+              <div className="bg-green-50 p-8 rounded shadow-md">
                 <h2 className="text-2xl font-bold mb-4">Register</h2>
                 <form onSubmit={handleSubmit(onSubmit)}>
                   <div className="mb-4">
