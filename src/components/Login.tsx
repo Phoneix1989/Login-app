@@ -20,8 +20,12 @@ const Login: React.FC = () => {
   return (
     <div className=" flex bg-[url('/src/assets/moon.jpg')] bg-cover bg-center h-screen p-8">
       <div  className=" bg-black w-full flex flex-col-2 justify-center rounded-lg p-10 shadow-2xl absolute inset-y-0 right-0 bg-opacity-50">
-        <div className="w-1/2 mr-10 flex items-center justify-center rounded-lg ">
-          {/* <img src="src/assets/moon.jpg" alt="moon.jpg"/> */}
+        <div className="w-1/2 mr-10 flex items-center justify-center rounded-lg">
+          <div className='absolute top-28 left-20 flex'>
+          <img src="src/assets/lgp.png" alt="lgp.png" className="h-12 w-12"/>
+          <h1 className="ml-3 mt-6 text-blue-500 font-extrabold text-xl">Planet</h1>
+          </div>
+          <span className="absolute bottom-28 left-20 text-blue-500 font-extrabold text-5xl ">Exploring <br></br>the universe</span>
         </div>
           <div className= "bg-gray-400 p-16 rounded-lg shadow-lg w-1/2">
             <h2 className="flex items-center justify-center text-2xl font-bold mb-4">Welcome!</h2>
@@ -52,19 +56,19 @@ const Login: React.FC = () => {
               </div>
               <button
                 type="submit"
-                className="w-full bg-indigo-600 text-white rounded-md py-2 px-4 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-50"
+                className="w-full bg-blue-500 text-white rounded-md py-2 px-4 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-50"
                 >
                 Login
               </button>
             </form>
             <div className="mt-4 text-center text-sm text-gray-600">
-              <Link to="/forgot-password" className="font-medium text-indigo-600 hover:text-indigo-500">
+              <Link to="/forgot-password" className="font-medium text-blue-700 hover:text-blue-500">
                 Forgot password?
               </Link>
             </div>
             <p className="mt-4 text-center text-sm text-gray-600">
               Don't have an account?{' '}
-              <Link to="/register" className="font-medium text-indigo-600 hover:text-indigo-500">
+              <Link to="/register" className="font-medium text-blue-700 hover:text-blue-500">
                 Register
               </Link>
             </p>
