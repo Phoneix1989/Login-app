@@ -17,16 +17,16 @@ const OTP: React.FC = () => {
   };
 
   return (
-    <div className=" flex bg-[url('/src/assets/moon.jpg')] bg-cover bg-center h-screen p-8">
-      <div  className=" bg-black w-full flex flex-col-2 justify-center rounded-lg p-10 shadow-2xl absolute inset-y-0 right-0 bg-opacity-50">
-        <div className="w-1/2 mr-10 flex items-center justify-center rounded-lg">
-          <div className='absolute top-28 left-20 flex'>
-          <img src="src/assets/lgp.png" alt="lgp.png" className="h-12 w-12"/>
-          <h1 className="ml-3 mt-6 text-white font-extrabold text-xl">Planet</h1>
-          </div>
-          <span className="absolute bottom-28 left-20 text-white font-extrabold text-5xl ">Exploring <br></br>the universe</span>
-        </div>
-              <div className="bg-green-50 p-8 rounded shadow-md">
+    <div className=" flex bg-[url('/src/assets/moon.jpg')] bg-cover bg-center h-screen p-8 justify-center sm:justify-start">
+    <div className='flex ml-14'>
+      <img src="src/assets/lgp.png" alt="lgp.png" className="h-12 w-12"/>
+      <h1 className="ml-3 mt-6 text-white font-extrabold text-xl">Planet</h1>
+    </div>
+  <div className="mr-10 flex items-center justify-center rounded-lg">
+    <span className="absolute bottom-36 left-20 text-white font-extrabold text-5xl hidden sm:block">Exploring <br></br>the universe</span>
+  </div>
+  <div className='absolute right-10 top-36 flex justify-end sm:justify-center'>
+    <div className= "bg-green-50 p-16 rounded-lg shadow-lg h-96 w-96">
                 <h2 className="text-2xl font-bold mb-4">Enter OTP</h2>
                 <form onSubmit={handleSubmit(onSubmit)}>
                   <div className="mb-4">
